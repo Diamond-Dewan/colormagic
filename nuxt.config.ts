@@ -24,9 +24,7 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'light'
   },
-  extends: [
-    '@nuxt/ui-pro'
-  ],
+  extends: [],
   modules: [
     '@nuxtjs/google-fonts',
     '@nuxt/ui',
