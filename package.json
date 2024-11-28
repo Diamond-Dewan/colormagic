@@ -20,6 +20,7 @@
     "@nuxtjs/plausible": "1.0.2",
     "@sinclair/typebox": "0.33.12",
     "@tanstack/vue-query": "5.56.2",
+    "@vue/runtime-dom": "^3.5.13",
     "@vueuse/core": "11.1.0",
     "ajv": "8.17.1",
     "ajv-formats": "3.0.1",
@@ -35,6 +36,7 @@
     "pino": "8.16.1",
     "pino-pretty": "10.2.3",
     "sharp": "0.33.5",
+    "tailwindcss": "^3.4.15",
     "yup": "1.4.0"
   },
   "overrides": {

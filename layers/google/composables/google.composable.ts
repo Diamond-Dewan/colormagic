@@ -2,10 +2,14 @@
 import { useMutation, useQueryClient } from '@tanstack/vue-query';
 import type { GoogleAuthInputDto, GoogleAuthUrlInputDto } from '../server/dtos/google.dto';
 
+interface GoogleAuthResponse {
+  url?: string
+}
+
 export function useGoogleAuthRedirect() {
   return useMutation({
     mutationFn: async (params: GoogleAuthUrlInputDto) => {
-      const response = await $fetch('/api/google/auth/get-url', {
+      const response = await $fetch<GoogleAuthResponse>('/api/google/auth/get-url', {
         method: 'POST',
         body: {
           state: params.state
